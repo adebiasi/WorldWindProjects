@@ -1,0 +1,51 @@
+/** variables related to the cars */
+//it gives in milliseconds the time steps for the updating.
+<updateRate>30</updateRate>
+//after how many roads the vehicle update it's path
+<numStepForRoutingPathCalculation>30</numStepForRoutingPathCalculation>
+//minimum speed
+<minSpeed>25</minSpeed>
+//max speed = minspeed+desta speed
+<deltaSpeed>150</deltaSpeed>
+//the radius of the renderable object that identifies a car
+<CAR_RADIUS>3</CAR_RADIUS>
+//the distance that defines if a car is near another car
+<CARSDISTANCE>25</CARSDISTANCE>
+//the number of car that is used to generate a queue
+<PASSABLECARS>5</PASSABLECARS>
+//time used to improve the performance (in millised)
+<carFrequency>1500</carFrequency>
+//the car speed used for the simple emitter 
+<carSpeed>400</carSpeed>
+//the max number of car supported by the system
+<maxcar>200</maxcar>
+
+/** variables related to the roads	 */
+// Penalty for each car in a segment
+<PER_CAR_PENALTY>80</PER_CAR_PENALTY> 
+//used to identify when the extruded line of each road is  colored red
+<max_cars_per_path>10</max_cars_per_path>
+	
+/** variables related to the parking lots	 */
+<numCarsPerParkingLot>5</numCarsPerParkingLot>
+	
+/** variables related to the extruded line used to analyze the traffic	 */
+//120.0d / 360.0d
+<minHue>0.33</minHue>
+//0.0d / 360.0d
+<maxHue>0</maxHue>
+	
+/** variables related to the location of the input data	 */
+<wfsServer>http://193.205.215.100/geoserver/wfs</wfsServer>
+	
+<typeName>cite:Home_emitter</typeName>;
+<fileBuilding>sim_data\\buildings\\shapes\\edfici_projected_lite.shp</fileBuilding>;
+<fileRoads>sim_data\\PolyRoads\\unione_strade.shp</fileRoads>;
+<fileOutputSimulation>sim_data\\PollutionSimulation\\test.kml</fileOutputSimulation>;
+<KML_TRENTO_DATA>http://193.205.215.100/TempWebFolder/Traffic/Roads_Geo_WGS84.txt</KML_TRENTO_DATA>;
+
+// Altitude of roads and cars	
+<RENDERALTITUDE>0</RENDERALTITUDE> 
+
+
+
