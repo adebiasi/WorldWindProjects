@@ -1,0 +1,236 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x49fe4e7c, pid=4288, tid=2012
+#
+# JRE version: 6.0_17-b04
+# Java VM: Java HotSpot(TM) Client VM (14.3-b01 mixed mode windows-x86 )
+# Problematic frame:
+# C  [ig4icd32.dll+0x1e4e7c]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x476f5000):  JavaThread "AWT-EventQueue-0" [_thread_in_native, id=2012, stack(0x4db80000,0x4dbd0000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0704acf0
+
+Registers:
+EAX=0x0704acf0, EBX=0x4be9a990, ECX=0xd9d945b0, EDX=0x4ac00080
+ESP=0x4dbcf0a0, EBP=0x4dbcf15c, ESI=0x4ac09390, EDI=0x4aca5788
+EIP=0x49fe4e7c, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x4dbcf0a0)
+0x4dbcf0a0:   00000000 4ac00080 00080038 00000000
+0x4dbcf0b0:   00000000 00000000 4fea1500 00000014
+0x4dbcf0c0:   4ac00080 00001360 0000016b 0704acf0
+0x4dbcf0d0:   b870f4c4 4be96f00 4be40c40 4bd39a28
+0x4dbcf0e0:   43920000 43920000 43920000 43920000
+0x4dbcf0f0:   47412400 47412400 47412400 47412400
+0x4dbcf100:   49969c8a 49b5cfde 49b5cfde 49b5cfde
+0x4dbcf110:   43c3c000 43c3c000 43c3c000 43c3c000 
+
+Instructions: (pc=0x49fe4e7c)
+0x49fe4e6c:   04 89 44 24 18 83 7c 24 28 02 7d 04 89 44 24 30
+0x49fe4e7c:   0f 12 00 8b 44 24 30 0f 16 00 8b 44 24 18 0f 12 
+
+
+Stack: [0x4db80000,0x4dbd0000],  sp=0x4dbcf0a0,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ig4icd32.dll+0x1e4e7c]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  com.sun.opengl.impl.GLImpl.glDrawElements0(IIIJ)V+0
+j  com.sun.opengl.impl.GLImpl.glDrawElements(IIIJ)V+10
+j  gov.nasa.worldwind.terrain.RectangularTessellator.renderVBO(Lgov/nasa/worldwind/render/DrawContext;Lgov/nasa/worldwind/terrain/RectangularTessellator$RectTile;I)Z+41
+j  gov.nasa.worldwind.terrain.RectangularTessellator.render(Lgov/nasa/worldwind/render/DrawContext;Lgov/nasa/worldwind/terrain/RectangularTessellator$RectTile;I)J+48
+j  gov.nasa.worldwind.terrain.RectangularTessellator.render(Lgov/nasa/worldwind/render/DrawContext;Lgov/nasa/worldwind/terrain/RectangularTessellator$RectTile;)V+30
+j  gov.nasa.worldwind.terrain.RectangularTessellator$RectTile.render(Lgov/nasa/worldwind/render/DrawContext;)V+12
+j  gov.nasa.worldwind.terrain.SectorGeometryList.pick(Lgov/nasa/worldwind/render/DrawContext;Ljava/util/List;)Ljava/util/List;+146
+j  gov.nasa.worldwind.AbstractSceneController.pickTerrain(Lgov/nasa/worldwind/render/DrawContext;)V+118
+j  gov.nasa.worldwind.AbstractSceneController.pick(Lgov/nasa/worldwind/render/DrawContext;)V+21
+j  gov.nasa.worldwind.BasicSceneController.doRepaint(Lgov/nasa/worldwind/render/DrawContext;)V+32
+j  gov.nasa.worldwind.AbstractSceneController.repaint()I+58
+j  gov.nasa.worldwind.WorldWindowGLAutoDrawable.doDisplay()I+4
+j  gov.nasa.worldwind.WorldWindowGLAutoDrawable.display(Ljavax/media/opengl/GLAutoDrawable;)V+115
+j  com.sun.opengl.impl.GLDrawableHelper.display(Ljavax/media/opengl/GLAutoDrawable;)V+29
+j  javax.media.opengl.GLCanvas$DisplayAction.run()V+80
+j  com.sun.opengl.impl.GLDrawableHelper.invokeGL(Ljavax/media/opengl/GLDrawable;Ljavax/media/opengl/GLContext;Ljava/lang/Runnable;Ljava/lang/Runnable;)V+418
+j  javax.media.opengl.GLCanvas.maybeDoSingleThreadedWorkaround(Ljava/lang/Runnable;Ljava/lang/Runnable;)V+36
+j  javax.media.opengl.GLCanvas.display()V+9
+j  javax.media.opengl.GLCanvas.paint(Ljava/awt/Graphics;)V+125
+j  javax.media.opengl.GLCanvas.update(Ljava/awt/Graphics;)V+2
+j  sun.awt.RepaintArea.updateComponent(Ljava/awt/Component;Ljava/awt/Graphics;)V+6
+j  sun.awt.RepaintArea.paint(Ljava/lang/Object;Z)V+263
+j  sun.awt.windows.WComponentPeer.handleEvent(Ljava/awt/AWTEvent;)V+107
+j  java.awt.Component.dispatchEventImpl(Ljava/awt/AWTEvent;)V+853
+j  java.awt.Component.dispatchEvent(Ljava/awt/AWTEvent;)V+2
+j  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V+46
+j  java.awt.EventDispatchThread.pumpOneEventForFilters(I)Z+204
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+30
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x476f5000 JavaThread "AWT-EventQueue-0" [_thread_in_native, id=2012, stack(0x4db80000,0x4dbd0000)]
+  0x476f4800 JavaThread "Keep-Alive-Timer" daemon [_thread_blocked, id=5132, stack(0x4d310000,0x4d360000)]
+  0x476f4400 JavaThread "Idle World Wind Task " daemon [_thread_blocked, id=6096, stack(0x4d280000,0x4d2d0000)]
+  0x476f3c00 JavaThread "Idle World Wind Task " daemon [_thread_blocked, id=5844, stack(0x4d1f0000,0x4d240000)]
+  0x476f3800 JavaThread "Idle World Wind Task " daemon [_thread_blocked, id=5492, stack(0x4cf60000,0x4cfb0000)]
+  0x476f3000 JavaThread "Idle World Wind Task " daemon [_thread_blocked, id=6012, stack(0x4ced0000,0x4cf20000)]
+  0x476f2c00 JavaThread "Thread-13" daemon [_thread_blocked, id=3200, stack(0x4c840000,0x4c890000)]
+  0x476f2400 JavaThread "DestroyJavaVM" [_thread_blocked, id=6072, stack(0x002b0000,0x00300000)]
+  0x476f1400 JavaThread "AWT-Shutdown" [_thread_blocked, id=5128, stack(0x49d20000,0x49d70000)]
+  0x476f0c00 JavaThread "Thread-11" daemon [_thread_blocked, id=5792, stack(0x49c90000,0x49ce0000)]
+  0x476f0800 JavaThread "TimerQueue" daemon [_thread_blocked, id=5272, stack(0x49c00000,0x49c50000)]
+  0x485f9000 JavaThread "Layer Resource Retriever USGS Topographic Maps 1:24K" daemon [_thread_blocked, id=5244, stack(0x49b70000,0x49bc0000)]
+  0x48736c00 JavaThread "Layer Resource Retriever USGS Topographic Maps 1:100K" daemon [_thread_blocked, id=5968, stack(0x49ae0000,0x49b30000)]
+  0x476a5400 JavaThread "Idle World Wind Retriever" daemon [_thread_blocked, id=5460, stack(0x49a50000,0x49aa0000)]
+  0x476a5000 JavaThread "Layer Resource Retriever USGS Topographic Maps 1:250K" daemon [_thread_blocked, id=2676, stack(0x479f0000,0x47a40000)]
+  0x4890dc00 JavaThread "Layer Resource Retriever i-cubed Landsat" daemon [_thread_blocked, id=6108, stack(0x499c0000,0x49a10000)]
+  0x4890d400 JavaThread "Idle World Wind Retriever" daemon [_thread_blocked, id=2536, stack(0x49930000,0x49980000)]
+  0x486a1000 JavaThread "Layer Resource Retriever Blue Marble (WMS) 2004" daemon [_thread_blocked, id=5112, stack(0x498a0000,0x498f0000)]
+  0x4874c800 JavaThread "Idle World Wind Retriever" daemon [_thread_blocked, id=2772, stack(0x48ae0000,0x48b30000)]
+  0x4874c400 JavaThread "ElevationModel Resource Retriever Earth Elevation Model (USA 10m, WordWide 30m, Ocean 900m)" daemon [_thread_blocked, id=3240, stack(0x49550000,0x495a0000)]
+  0x476dcc00 JavaThread "AWT-Windows" daemon [_thread_in_native, id=5412, stack(0x47ad0000,0x47b20000)]
+  0x476da000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=5620, stack(0x47960000,0x479b0000)]
+  0x02548800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=652, stack(0x47480000,0x474d0000)]
+  0x02544800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=4232, stack(0x473f0000,0x47440000)]
+  0x02541800 JavaThread "Attach Listener" daemon [_thread_blocked, id=4048, stack(0x47360000,0x473b0000)]
+  0x02537000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5268, stack(0x472d0000,0x47320000)]
+  0x02507800 JavaThread "Finalizer" daemon [_thread_blocked, id=4248, stack(0x47240000,0x47290000)]
+  0x02506400 JavaThread "Reference Handler" daemon [_thread_blocked, id=780, stack(0x471b0000,0x47200000)]
+
+Other Threads:
+  0x02502800 VMThread [stack: 0x47160000,0x471b0000] [id=4740]
+  0x02549800 WatcherThread [stack: 0x47510000,0x47560000] [id=2744]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 3328K, used 1800K [0x04570000, 0x04900000, 0x09250000)
+  eden space 3008K,  58% used [0x04570000, 0x0472a838, 0x04860000)
+  from space 320K,   9% used [0x04860000, 0x04867958, 0x048b0000)
+  to   space 320K,   0% used [0x048b0000, 0x048b0000, 0x04900000)
+ tenured generation   total 43032K, used 30045K [0x09250000, 0x0bc56000, 0x42d70000)
+   the space 43032K,  69% used [0x09250000, 0x0afa77c8, 0x0afa7800, 0x0bc56000)
+ compacting perm gen  total 16640K, used 16519K [0x42d70000, 0x43db0000, 0x46d70000)
+   the space 16640K,  99% used [0x42d70000, 0x43d91d00, 0x43d91e00, 0x43db0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Briseide\_Util\jre\bin\javaw.exe
+0x77e70000 - 0x77ff0000 	C:\Windows\SysWOW64\ntdll.dll
+0x75760000 - 0x75870000 	C:\Windows\syswow64\kernel32.dll
+0x75b80000 - 0x75bc6000 	C:\Windows\syswow64\KERNELBASE.dll
+0x774d0000 - 0x77570000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76480000 - 0x7652c000 	C:\Windows\syswow64\msvcrt.dll
+0x75880000 - 0x75899000 	C:\Windows\SysWOW64\sechost.dll
+0x772b0000 - 0x773a0000 	C:\Windows\syswow64\RPCRT4.dll
+0x75550000 - 0x755b0000 	C:\Windows\syswow64\SspiCli.dll
+0x75540000 - 0x7554c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x75630000 - 0x75730000 	C:\Windows\syswow64\USER32.dll
+0x77180000 - 0x77210000 	C:\Windows\syswow64\GDI32.dll
+0x75b70000 - 0x75b7a000 	C:\Windows\syswow64\LPK.dll
+0x77210000 - 0x772ad000 	C:\Windows\syswow64\USP10.dll
+0x758a0000 - 0x75900000 	C:\Windows\system32\IMM32.DLL
+0x773a0000 - 0x7746c000 	C:\Windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Briseide\_Util\jre\bin\msvcr71.dll
+0x6d800000 - 0x6da8b000 	C:\Briseide\_Util\jre\bin\client\jvm.dll
+0x748e0000 - 0x74912000 	C:\Windows\system32\WINMM.dll
+0x72160000 - 0x721ac000 	C:\Windows\system32\apphelp.dll
+0x6d7b0000 - 0x6d7bc000 	C:\Briseide\_Util\jre\bin\verify.dll
+0x6d330000 - 0x6d34f000 	C:\Briseide\_Util\jre\bin\java.dll
+0x6d290000 - 0x6d298000 	C:\Briseide\_Util\jre\bin\hpi.dll
+0x75900000 - 0x75905000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d7f0000 - 0x6d7ff000 	C:\Briseide\_Util\jre\bin\zip.dll
+0x6d000000 - 0x6d14a000 	C:\Briseide\_Util\jre\bin\awt.dll
+0x73f70000 - 0x73fc1000 	C:\Windows\system32\WINSPOOL.DRV
+0x75e30000 - 0x75f8c000 	C:\Windows\syswow64\ole32.dll
+0x73ad0000 - 0x73c6e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll
+0x77470000 - 0x774c7000 	C:\Windows\syswow64\SHLWAPI.dll
+0x72570000 - 0x72583000 	C:\Windows\system32\DWMAPI.DLL
+0x726f0000 - 0x72770000 	C:\Windows\system32\uxtheme.dll
+0x6d230000 - 0x6d284000 	C:\Briseide\_Util\jre\bin\fontmanager.dll
+0x00220000 - 0x0022a000 	C:\Program Files (x86)\SweetIM\Messenger\mgAdaptersProxy.dll
+0x76530000 - 0x7717a000 	C:\Windows\syswow64\shell32.dll
+0x483f0000 - 0x4843d000 	D:\workspace\TrafficFlowSimulator\lib\worldwind\jogl.dll
+0x5ef80000 - 0x5f048000 	C:\Windows\system32\OPENGL32.dll
+0x5f900000 - 0x5f922000 	C:\Windows\system32\GLU32.dll
+0x6ce30000 - 0x6cf17000 	C:\Windows\system32\DDRAW.dll
+0x71190000 - 0x71196000 	C:\Windows\system32\DCIMAN32.dll
+0x759d0000 - 0x75b6d000 	C:\Windows\syswow64\SETUPAPI.dll
+0x75600000 - 0x75627000 	C:\Windows\syswow64\CFGMGR32.dll
+0x75940000 - 0x759cf000 	C:\Windows\syswow64\OLEAUT32.dll
+0x75e10000 - 0x75e22000 	C:\Windows\syswow64\DEVOBJ.dll
+0x47900000 - 0x4790b000 	C:\Briseide\_Util\jre\bin\clib_jiio_util.dll
+0x48940000 - 0x48a4c000 	C:\Briseide\_Util\jre\bin\clib_jiio_sse2.dll
+0x6d610000 - 0x6d623000 	C:\Briseide\_Util\jre\bin\net.dll
+0x77570000 - 0x775a5000 	C:\Windows\syswow64\WS2_32.dll
+0x75bd0000 - 0x75bd6000 	C:\Windows\syswow64\NSI.dll
+0x74580000 - 0x745bc000 	C:\Windows\system32\mswsock.dll
+0x73cd0000 - 0x73cd6000 	C:\Windows\System32\wship6.dll
+0x74570000 - 0x74575000 	C:\Windows\System32\wshtcpip.dll
+0x73db0000 - 0x73dd1000 	C:\Program Files (x86)\Bonjour\mdnsNSP.dll
+0x74230000 - 0x7424c000 	C:\Windows\system32\Iphlpapi.DLL
+0x74220000 - 0x74227000 	C:\Windows\system32\WINNSI.DLL
+0x73d60000 - 0x73da4000 	C:\Windows\system32\DNSAPI.dll
+0x73d30000 - 0x73d57000 	C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live\WLIDNSP.DLL
+0x73c70000 - 0x73c76000 	C:\Windows\system32\rasadhlp.dll
+0x73f30000 - 0x73f68000 	C:\Windows\System32\fwpuclnt.dll
+0x6d630000 - 0x6d639000 	C:\Briseide\_Util\jre\bin\nio.dll
+0x6d360000 - 0x6d366000 	C:\Briseide\_Util\jre\bin\jawt.dll
+0x48b80000 - 0x48b85000 	D:\workspace\TrafficFlowSimulator\lib\worldwind\jogl_awt.dll
+0x49e00000 - 0x4ab61000 	C:\Windows\system32\ig4icd32.dll
+0x73e50000 - 0x73e66000 	C:\Windows\system32\CRYPTSP.dll
+0x73e10000 - 0x73e4b000 	C:\Windows\system32\rsaenh.dll
+0x74620000 - 0x74637000 	C:\Windows\system32\USERENV.dll
+0x74680000 - 0x7468b000 	C:\Windows\system32\profapi.dll
+0x73830000 - 0x73840000 	C:\Windows\system32\NLAapi.dll
+0x73360000 - 0x73370000 	C:\Windows\system32\napinsp.dll
+0x73340000 - 0x73352000 	C:\Windows\system32\pnrpnsp.dll
+0x73330000 - 0x73338000 	C:\Windows\System32\winrnr.dll
+0x73320000 - 0x7332d000 	C:\Windows\system32\wshbth.dll
+0x6d170000 - 0x6d19f000 	C:\Briseide\_Util\jre\bin\cmm.dll
+0x75f90000 - 0x76013000 	C:\Windows\syswow64\CLBCatQ.DLL
+
+VM Arguments:
+jvm_args: -Djava.library.path=D:\workspace\TrafficFlowSimulator\lib\worldwind -Xmx1000m -Dhttp.proxyHost=proxy.unitn.it -Dhttp.nonProxyHosts=serv-map|serv-ito|serv-web|localhost -Dhttp.proxyPort=3128 
+java_command: AnalyticSurfaceDemo
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Briseide\_Util\jre\
+CLASSPATH=.;C:\Program Files (x86)\QuickTime\QTSystem\QTJava.zip
+PATH=C:\Program Files (x86)\Java\jre6\bin\client;C:\Program Files (x86)\Java\jre6\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files\Dell\DW WLAN Card;C:\Briseide\_Util\jre\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Windows Live\Shared
+USERNAME=a.debiasi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, ht
+
+Memory: 4k page, physical 3988068k(974420k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (14.3-b01) for windows-x86 JRE (1.6.0_17-b04), built on Oct 11 2009 00:52:06 by "java_re" with MS VC++ 7.1
+
+time: Thu Aug 16 18:30:51 2012
+elapsed time: 3 seconds
+
