@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+  <beans>
+  	<bean id="CustomReproject" class="it.graphitech.lifeimagine.wps.util.CustomReproject"/>
+  	<bean id="CustomIntersection" class="it.graphitech.lifeimagine.wps.util.CustomIntersection"/>
+  	<bean id="CustomBuffer" class="it.graphitech.lifeimagine.wps.util.CustomBuffer"/>
+  	<bean id="CustomFilter" class="it.graphitech.lifeimagine.wps.util.CustomFilter"/>
+  	<bean id="GTRasterStatistics" class="it.graphitech.lifeimagine.wps.GTRasterStatistics"/>
+    <bean id="ICZM" class="it.graphitech.lifeimagine.wps.ICZM"/>
+    <bean id="Landslides1" class="it.graphitech.lifeimagine.wps.Landslides1"/>
+    <bean id="Landslides2" class="it.graphitech.lifeimagine.wps.Landslides2"/>
+    <bean id="Landslides3" class="it.graphitech.lifeimagine.wps.Landslides3"/>
+    <bean id="SoilConsumption2" class="it.graphitech.lifeimagine.wps.SoilConsumption2"/>
+    <bean id="SoilConsumption3" class="it.graphitech.lifeimagine.wps.SoilConsumption3"/>
+     <bean id="PolygonExtractionGT" class="it.graphitech.lifeimagine.wps.PolygonExtractionGT"/>
+     <bean id="PolygonExtractionGDAL_GT" class="it.graphitech.lifeimagine.wps.PolygonExtractionGDAL_GT"/>
+     <bean id="RetrieveValues" class="it.graphitech.lifeimagine.wps.RetrieveValues"/>
+     <bean id="RetrieveAttributes" class="it.graphitech.lifeimagine.wps.RetrieveAttributes"/>     
+  </beans>
