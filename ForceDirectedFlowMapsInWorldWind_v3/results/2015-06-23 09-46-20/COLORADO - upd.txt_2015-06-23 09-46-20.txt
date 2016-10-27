@@ -1,0 +1,46 @@
+lengthMiddleSegment: 60419.635
+step_energy: 0.05
+electrostatic_force_factor: 1.0
+spring_force_factor: 0.1
+reject_force_factor: 2.0
+distanceRejectRadius: 15104.90875
+distanceSamePosition: 15104.90875
+Iteration;time;energy;num nodes;reject force is enabled;spring force is enabled;electrostatic force is enabled;str_force;rep_force;elec_force
+1;6,71;634,07;1300;true;false;false;0;156,78;0
+2;0,09;16,86;1255;true;false;false;0;4,21;0
+3;0,15;0;1218;true;false;false;0;0;0
+4;0,2;0;1183;true;false;false;0;0;0
+5;0,25;0;1164;true;false;false;0;0;0
+6;0,3;0;1147;true;false;false;0;0;0
+7;0,35;0;1137;true;false;false;0;0;0
+8;0,4;0;1124;true;false;false;0;0;0
+9;0,44;0;1114;true;false;false;0;0;0
+10;0,49;0;1102;true;false;false;0;0;0
+11;0,53;0;1094;true;false;false;0;0;0
+12;0,58;0;1086;true;false;false;0;0;0
+13;0,62;0;1081;true;false;false;0;0;0
+14;0,67;0;1076;true;false;false;0;0;0
+15;0,71;0;1071;true;false;false;0;0;0
+16;0,76;0,08;1068;true;false;false;0;0,02;0
+17;0,8;0;1066;true;false;false;0;0;0
+18;0,85;0;1061;true;false;false;0;0;0
+19;0,89;0;1059;true;false;false;0;0;0
+20;0,94;0;1057;true;false;false;0;0;0
+21;0,98;0;1053;true;false;false;0;0;0
+22;1,02;0;1049;true;false;false;0;0;0
+23;1,06;0;1046;true;false;false;0;0;0
+24;1,11;0;1043;true;false;false;0;0;0
+25;1,15;0;1042;true;false;false;0;0;0
+26;1,19;0;1042;true;false;false;0;0;0
+27;1,23;0;1042;true;false;false;0;0;0
+28;1,27;0;1042;true;false;false;0;0;0
+29;1,32;0;1042;true;false;false;0;0;0
+30;1,36;0;1042;true;false;false;0;0;0
+31;1,4;0;1042;true;false;false;0;0;0
+32;1,45;0;1042;true;false;false;0;0;0
+33;1,49;0;1042;true;false;false;0;0;0
+34;1,53;0;1042;true;false;false;0;0;0
+35;1,58;0;1042;true;false;false;0;0;0
+36;1,62;0;1042;true;false;false;0;0;0
+37;1,66;0;1042;true;false;false;0;0;0
+38;1,71;0;1042;true;false;false;0;0;0

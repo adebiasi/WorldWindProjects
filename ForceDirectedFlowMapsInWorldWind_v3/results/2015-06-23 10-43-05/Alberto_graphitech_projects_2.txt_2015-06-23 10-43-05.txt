@@ -1,0 +1,38 @@
+lengthMiddleSegment: 134509.82
+step_energy: 0.05
+electrostatic_force_factor: 1.0
+spring_force_factor: 0.1
+reject_force_factor: 2.0
+distanceRejectRadius: 33627.455
+distanceSamePosition: 33627.455
+Iteration;time;energy;num nodes;reject force is enabled;spring force is enabled;electrostatic force is enabled;str_force;rep_force;elec_force
+1;5,26;2150367,24;912;true;true;true;0;8143,89;0
+2;0,07;3988998,84;894;true;true;true;0;190185,07;0
+3;0,15;3937662,14;893;true;true;true;0;196879;0
+4;0,21;3973594,9;893;true;true;true;0;195266,1;0
+5;0,26;3925646,59;893;true;true;true;0;187335,21;0
+6;0,31;3997429,9;893;true;true;true;0;185667,59;0
+7;0,36;3931969,9;893;true;true;true;0;200482,59;0
+8;0,41;3916753,09;893;true;true;true;0;202457,7;0
+9;0,46;3965222,64;893;true;true;true;0;194134,57;0
+10;0,51;3944140,23;893;true;true;true;0;199885,56;0
+11;0,57;3930819,31;893;true;true;true;0;195972,31;0
+12;0,62;3924396,27;893;true;true;true;0;200450,33;0
+13;0,67;3954974,63;893;true;true;true;0;201352,09;0
+14;0,72;3957330,83;893;true;true;true;0;200240,87;0
+15;0,78;3939100,84;893;true;true;true;0;194517,7;0
+16;0,83;3938509,55;893;true;true;true;0;208592,79;0
+17;0,88;3927793,66;893;true;true;true;0;198065,67;0
+18;0,94;3964278,35;893;true;true;true;0;196662,14;0
+19;0,99;3946372,54;893;true;true;true;0;196595,2;0
+20;1,04;3922297,3;893;true;true;true;0;202134,98;0
+21;1,09;3933754,15;893;true;true;true;0;200269,25;0
+22;1,15;3970728,07;893;true;true;true;0;198085,02;0
+23;1,2;3915949,66;893;true;true;true;0;200288,71;0
+24;1,25;3958500,82;893;true;true;true;0;201865,91;0
+25;1,3;3946834,82;893;true;true;true;0;194287,23;0
+26;1,36;3981418,42;893;true;true;true;0;190745,24;0
+27;1,41;3914977,29;893;true;true;true;0;203713,24;0
+28;1,46;3942010,04;893;true;true;true;0;202135,39;0
+29;1,51;3999335,74;893;true;true;true;0;191928,98;0
+30;1,57;3945411,38;893;true;true;true;0;194943,31;0
